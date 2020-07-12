@@ -1,0 +1,151 @@
+:root{
+    --text-color-1:#32A5EF;
+    --text-color-2:white;
+    --border-radius-1:10px;
+    --border-radius-2:20px;
+    --font-size-1:2em;
+    --font-size-2:1.5em;
+    --font-size-3:1em;
+    --font-size-4:.8em;
+    --primary-color:#32A5EF;
+    --secondary-color:black;
+    --third-color:white;
+
+}
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--secondary-color);
+
+}
+.wrapper
+{
+    margin-right: auto; 
+    margin-left:  auto; 
+    max-width: 960px; 
+    padding-right: 10px; 
+    padding-left:  10px; 
+}
+#about-me
+{
+  display: flex;
+  flex-flow: column wrap;
+  height: 100vh;
+  justify-content: space-evenly ;
+  align-items: center;
+}
+.who-iam
+{
+    font-size: var(--font-size-1);
+    color: var(--text-color-2);
+}
+.who-iam > span
+{
+    font-size: var(--font-size-2);
+    color: var(--text-color-1);
+}
+#about-me .what-iam-doing-now
+{
+    font-size: var(--font-size-3);
+    color: var(--text-color-2);
+    width: 65%;
+}
+#about-me .what-iam-doing-now > span
+{
+    font-size: var(--font-size-3);
+    color: var(--text-color-1); 
+}
+#about-me>p
+{
+    font-size: var(--font-size-2);
+    color: var(--text-color-2);
+}
+.skills
+{
+    font-size: var(--font-size-3);
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+    display: flex;
+    flex-flow: column wrap;
+    padding: 10px;
+    margin: 5px;
+}
+.skill-title
+{
+    color: var(--text-color-2);
+    padding: 10px;
+}
+.skills-item
+{
+    margin: 10px;
+    background-color: var(--primary-color);
+
+}
+.contact-me
+{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+.social-media-links
+{
+    text-decoration: none;
+    color: var(--text-color-1);
+    margin: 20px;
+    padding: 20px;
+    border-radius: var(--border-radius-1);
+    font-size: var(--font-size-2);
+    font-weight: 700;
+}
+.social-media-links:hover
+{
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+:focus
+{
+    
+    outline: 5px solid ;
+}
+
+@media (max-width:700px)
+{
+    .who-iam
+    {
+        font-size: var(--font-size-3);
+    }
+    #about-me   .what-iam-doing-now
+    {
+        font-size: var(--font-size-4);
+    }
+    .skills
+    {
+        font-size: var(--font-size-4);
+    }
+    .social-media-links
+    {
+        font-size: var(--font-size-4);
+    }
+}
+@media (min-width:700px) and (max-width:1200px)
+{
+    .who-iam
+    {
+        font-size: var(--font-size-2);
+    }
+    #about-me   .what-iam-doing-now
+    {
+        font-size: var(--font-size-3);
+    }
+    .skills
+    {
+        font-size: var(--font-size-3);
+    }
+    .social-media-links
+    {
+        font-size: var(--font-size-3);
+    }
+}
