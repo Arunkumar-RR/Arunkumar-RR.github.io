@@ -1,0 +1,78 @@
+$primary-color: #19c3e7; //#30c9e9
+$secondary-color: turquoise;
+$third-color:black;
+$fourth-color:white;
+$fifth-color:ghostwhite;
+//fontfamily
+$font-family:(
+
+    'montserrat':('Montserrat', sans-serif),
+    'roboto':('Roboto', sans-serif)
+
+);
+
+//text
+$text-color-1:black;
+$text-color-2:white;
+
+//font
+$font-weight : (
+    'bolder' : 900,
+    'bold' : 700,
+    'regular' : 400,
+    'light' : 300
+);
+
+$font-size :(
+    'big-1': 2em,
+    'big-2': 3em,
+    'big-3': 4em,
+
+    'medium-1':1.3em,
+    'medium-2':1.5em,
+    'medium-3':1.8em,
+
+    'small-1':1em,
+    'small-2':.8em,
+);
+
+//border
+$border-color-1:#f0f0f0;
+$border-radius:(
+
+  'extra-small':5px,
+  'small':10px,
+  'medium':15px,
+  'big':20px
+);
+
+
+
+//shadow
+
+$box-shadow:(
+
+  'light':(0 0.9px 3.9px rgba(0, 0, 0, 0.09),
+            0 1.9px 10px rgba(0, 0, 0, 0.12) ),
+  'dark':(0 0.9px 3.9px rgba(0, 0, 0, 0.14),
+           0 1.9px 10px rgba(0, 0, 0, 0.19) )
+); 
+
+
+//media queries
+@mixin smartphone {
+    @media screen and (min-width: 688px) {
+      @content;
+    }
+  }
+  @mixin tab {
+    @media screen and (min-width: 992px) {
+      @content;
+    }
+  }
+  @mixin pc {
+    @media screen and (min-width: 1312px) {
+      @content;
+    }
+  }
+  

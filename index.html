@@ -3,34 +3,151 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/styles.css">
-    <meta name="Description" content="R.R.Arunkumar,frontend web developer. located at salem,tamilnadu. ">
-    <title>R.R.Arunkumar</title>
-
+    <link rel="stylesheet" href="asset/css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <title>R.R.Arunkumar | frontend developer</title>
 </head>
 <body>
-    <div class="wrapper">
-        <section id="about-me">
-            <p class="what-iam-doing-now">
-                Hello there, iam <span>R.R.Arunkumar</span> .
-                I am currently in the process to become a <span>Front-end web developer</span> . 
-                Learning and practicing things every day .i will update my portfolio every time.
-                 soon I will upgrade my skills.
-            </p>
-            <div class="skills">
-                <h2 class="skill-title">skills</h2>
-                <hr>
-                <h4 class="skills-item">Html</h4>
-                <h4  class="skills-item">Css</h4>
-                <h4  class="skills-item">Git</h4>
+    <header>
+        <nav>
+            <ul class="navbar-item-container">
+               
+                <li class="nav-item ">
+                    <a href="#about-me" class="nav-item-link" >About me</a>
+                </li>
+                <li class="nav-item ">
+                    <a href="#work" class="nav-item-link" >Work</a>
+                </li>
+                <li class="nav-item ">
+                    <a href="#contacts" class="nav-item-link" >Contacts</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!--------- hero container ---------------->
+
+        <section id="hero-container">
+            <div class="hero-container-content" > 
+                <h2 class="name" >Arunkumar</h2>
+                <h3 class="my-passion">Frontend web developer</h3>
+                <div class="quick-links-container">
+                    <a href="https://www.linkedin.com/in/rr-arunkumar/" target="_blank" class="social-links">Linkedin</a>
+                    <a href="https://github.com/Arunkumar-RR" target="_blank" class=" social-links">Github</a>
+                    <a href="https://twitter.com/_arunkmr" target="_blank"  class=" social-links">Twitter</a>
+                </div>
             </div>
-            <div class="contact-me">
-                <a href="https://twitter.com/_arunkmr" target="_blank" class="social-media-links">Twitter</a>
-                <a href="https://www.linkedin.com/in/rr-arunkumar/" target="_blank" class="social-media-links">LinkedIn</a>
-                <a href="https://github.com/Arunkumar-RR" target="_blank" class="social-media-links">Github</a>
+         
+            <a href="#about-me" class="button know-more-button" >Know More &downarrow; </a>
+        </section>
+        <!------------- about me --------------------->
+        <section id="about-me">
+            <h1 class="heading">About me</h1>
+           <div class="content-container">
+                <div class="short-story-about-me">
+                    <p>
+                        
+                    Iam self-taught developer. i love frontend web development. 
+                    Passionate about building a interfaces for business class websites and web application.
+                     I learn and practise consistently.
+                    Looking for an opportunity to develop websites and to work on projects.
+                    </p>
+                </div>
+                <h4 class="resume">Checkout my  <a href="asset/resource/R.R.Arunkumar.pdf" target="_blank"  >resume</a> </h1>
+
+                <div class="skill-container">
+                    <h1 >skills</h1>
+                    <div class="skill-item-container">
+                        <h2 class="skill-items">html</h2>
+                        <h2 class="skill-items">Css</h2>
+                        <h2 class="skill-items">bootstrap</h2>
+                        <h2 class="skill-items">Sass</h2>
+                        <h2 class="skill-items">Git</h2>
+                        <h2 class="skill-items">Figma</h2>
+                    </div>
+                </div>
+                
+           </div>
+        </section>
+        <!------------- Work --------------------->
+        <section id="work">
+            <h1 class="heading">Work</h1>
+            <div class="project-container">
+                <div class="project-card ">
+                    <h3 class="project-title">CM photography </h1>
+                    <h4 class="project-description" >photography portfolio</h4>
+                    <div class="project-link-container">
+                        <a href="https://github.com/Arunkumar-RR/cm-photography" target="_blank" class="button"> Github </a>
+                        <a href="https://chandruphotography.netlify.app/"  target="_blank" class="button"> Live </a>
+                    </div>
+                </div>
+           
+                    <div id="project-1"  class="project-card ">
+                        <h3 class="project-title">virtual Career Guidence</h1>
+                        <h4 class="project-description">Elearning platform for students to learn desired skills for desired job</h4>
+                        <small >Know More &rightarrow;</small>
+                    </div>
+                    <div  id="project-1-detail" class="project-modal">
+                        <div class="modal-content">
+                            <span tabindex="1" class="close">&times;</span>
+                            <div class="project-details">
+                                <h3>Virtual Career Guidance</h3>
+                                <p class="content">
+                                  A web Application  that enables entry level 
+                                  students to learn desired skills for desired jobs and will get hired to companies.
+                                  Also Hr personals can post the jobs available in their companies with detailed description.
+                                  can view the students who are all applicable for the interviews.
+                                </p>
+                                <h5 class="parts-of-project"> Frontend :</h5>
+                                <h6 class="tech-stack">Html, css, bootstrap, javascript</h6>
+                                <h5 class="parts-of-project"> Backend :</h5>
+                                <h6  class="tech-stack">Php, mysql</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="project-2" class="project-card ">
+                        <img src="asset/resource/sih.png" alt="smart india hackathon 2018">
+                        <h3 class="project-title">Disaster Management system</h1>
+                        <small>Know More &rightarrow; </small>
+
+                    </div>
+                    <div id="project-2-detail" class="project-modal">
+                        <div class="modal-content">
+                            <span tabindex="1" class="close">&times;</span>
+                            <div class="project-details">
+                                <h3>Disaster Mangement system</h3>
+                                <p class="content"> 
+                                    It is Web and Android application that provides the Information about the shelters arranged by Governmental and various Non-Governmental agencies and Directs people of Andaman and Nicobar islands during any disaster. It includes information such as Shelter Vacancy, Food, Water availability, First Aid or Medicinal Requirements and Other Emergency services during any disaster such as Cyclone, Earthquake, and Tsunami etc.                                  </p>
+                                  <h5 class="parts-of-project"> Frontend :</h5>
+                                  <h6 class="tech-stack">Html, css, javascript, java</h6>
+                                  <h5 class="parts-of-project"> Backend :</h5>
+                                  <h6  class="tech-stack">Php, mysql</h6>
+                            </div>
+                        </div>
+                    </div>
             </div>
         </section>
-    </div>
+         <!------------- contact me --------------------->
+         <section id="contacts">
+            <h1 class="heading">Contacts</h1>
+                <h4  >Email me : <b> rrarunkumardgct@gmail.com </b>  </h4>
+                <a href="https://www.linkedin.com/in/rr-arunkumar/" target="_blank" class="button social-links">Linkedin</a>
+                <a href="https://github.com/Arunkumar-RR" target="_blank" class="button social-links">Github</a>
+                <a href="https://twitter.com/_arunkmr" target="_blank"  class="button social-links">Twitter</a>
+        </section>
+    </main>
+    <footer>
+        <div class="links">
+            <a href="#" class="links">Go Top &uparrow;</a>
 
+        </div>
+        <div class="created-by">
+            <small>&copy;2020</small>
+            <small>created by <a href="http://arunkumar-rr.github.io/"> AK</a></small>
+        </div>
+        
+    </footer>
+    <script src="asset/index.js"></script>
 </body>
 </html>

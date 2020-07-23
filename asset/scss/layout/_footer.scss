@@ -1,0 +1,19 @@
+footer
+{
+    height: 10vh;
+    background-color: $primary-color;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 10px;
+    .links
+    {
+        width: fit-content;
+        align-self: flex-end;
+        &>a{
+            font-size: map-get($map: $font-size, $key: small-1 );
+        }
+    }
+  
+}

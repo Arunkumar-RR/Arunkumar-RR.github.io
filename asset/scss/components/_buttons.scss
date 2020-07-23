@@ -1,0 +1,16 @@
+.button
+{
+    padding: 10px;
+    border: 1px solid $border-color-1;
+    background-color: $fourth-color;
+    box-shadow: map-get($map: $box-shadow, $key: light );
+    color: $text-color-1;
+    font-weight: map-get($map: $font-weight, $key: regular);
+    &:hover
+    {
+        box-shadow: map-get($map: $box-shadow, $key: dark);
+        background-color: $primary-color;
+    }
+
+}
+

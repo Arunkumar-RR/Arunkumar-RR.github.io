@@ -1,0 +1,149 @@
+#about-me
+{
+    min-height:100vh;
+    padding: 10px;
+    background-color: $primary-color;
+    .content-container
+    {   
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: space-evenly;
+        align-items: center;
+        .short-story-about-me
+        {
+            text-align: left;
+            width: 40%;
+            padding: 10px;
+        }
+        .resume
+        {
+            font-weight: map-get($map: $font-weight, $key: regular );
+            font-size: map-get( $font-size,small-3);
+            &>a
+            {
+                font-weight: map-get($map: $font-weight, $key: bold );
+                text-decoration: underline;
+                &:hover
+                {
+                    color: $fourth-color;
+                }
+            }
+        }
+        .skill-container
+        {
+            padding: 10px;
+            display: flex;
+            flex-flow: column wrap;
+            align-items: center;
+            h1
+            {
+                border-radius: map-get($map: $border-radius, $key:small );
+                font-size: map-get( $font-size,medium-3);
+                font-weight: map-get($map: $font-weight, $key: bold );
+                margin: 10px 0;
+            }
+            .skill-item-container
+            {
+                display: flex;
+                flex-flow: row wrap;
+                width: 60%;
+                .skill-items
+                {
+                    margin: 5px;
+                    padding: 5px 15px;
+                    flex: 1;
+                    border: 1px solid $fourth-color;
+                    display: flex;
+                    justify-content: center;
+                    text-transform: lowercase;
+                    font-weight: map-get($map: $font-weight, $key: regular );
+                    font-size: map-get( $font-size,small-3);
+                    border-radius: map-get($map: $border-radius , $key: small );
+                }
+            }
+    
+        }
+       
+       
+    } 
+}
+
+@include smartphone
+{
+    #about-me
+{
+
+    .content-container
+    {   
+        
+        .short-story-about-me
+        {
+            width: 90%;
+        }
+
+        .resume
+        {
+            font-size: map-get( $font-size,small-3);
+          
+        }
+        
+        .skill-container
+        {
+     
+            h1
+            {
+                font-size: map-get( $font-size,medium-2);
+            }
+            .skill-item-container
+            {
+                
+                width: 90%; 
+            }
+    
+        }
+        
+    } 
+}
+
+}
+
+@include tab
+{
+    #about-me
+{
+
+    .content-container
+    {   
+        
+        .short-story-about-me
+        {
+            width: 90%;
+            font-size: map-get( $font-size,medium-3);
+
+        }
+
+        .resume
+        {
+            font-size: map-get( $font-size,medium-3);
+          
+        }
+        
+        .skill-container
+        {
+     
+            h1
+            {
+                font-size: map-get( $font-size,medium-3);
+            }
+            .skill-item-container
+            {
+                
+                width: 80%; 
+            }
+    
+        }
+        
+    } 
+}
+
+}

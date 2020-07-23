@@ -1,0 +1,17 @@
+#work
+{
+   min-height:90vh;
+    padding: 10px;
+    margin: 0;
+    background-color: $fifth-color;
+    .project-container
+    {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+        align-items: center ;
+        margin: 80px 0 0 0;
+       
+    }
+}
+

@@ -1,0 +1,54 @@
+nav
+{
+    .navbar-item-container
+    {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .nav-item
+    {
+        list-style-type: none;
+    }
+    .nav-item-link
+    {
+        padding: 10px;
+        color: $text-color-1;
+        font-size: map-get($map: $font-size, $key: small-1 );
+        font-weight:map-get($map: $font-weight, $key: bold);
+        border-radius: map-get($map: $border-radius, $key: small );
+        &:hover
+        {
+            background-color: lighten($color: $primary-color, $amount: 40);
+        }
+    }
+}
+
+@include smartphone
+{
+    nav
+{
+    .navbar-item-container
+    {
+        padding: 0;
+    }
+}
+}
+@include tab
+{
+    nav
+{
+    padding: 20px;
+    .navbar-item-container
+    {
+        padding: 0;
+    }
+    .nav-item-link
+    {
+        padding: 15px;
+        color: $text-color-1;
+        font-size: map-get($map: $font-size, $key: medium-1 );
+    }
+}
+}

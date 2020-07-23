@@ -1,0 +1,50 @@
+@import "utilities/variables" ; 
+@import "utilities/mixins" ; 
+
+@import "components/buttons";
+@import "components/card";
+@import "components/modal";
+
+@import "layout/navbar";
+@import "layout/hero-container";
+@import "layout/about-me";
+@import "layout/work";
+@import "layout/contacts";
+@import "layout/footer";
+
+//global
+html
+{
+    scroll-behavior: smooth;
+    font-family:map-get($map: $font-family,$key: roboto );
+}
+body
+{
+    margin: 0;
+    padding: 0;
+}
+a
+{
+    text-decoration: none;
+    color: $text-color-1;
+    padding: 10px;
+}
+img
+{
+    max-width: 80%;
+    background-color: $primary-color;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    pointer-events: none;
+}
+.heading
+{
+    font-size: map-get($font-size,medium-3);
+    font-weight: map-get($map: $font-weight, $key: bolder );
+    text-align: center;
+    font-family: map-get($map: $font-family, $key: montserrat );
+}
+
+//nav
+

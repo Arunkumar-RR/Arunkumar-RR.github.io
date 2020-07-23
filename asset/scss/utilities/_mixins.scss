@@ -1,0 +1,16 @@
+@mixin scale-transition {
+    transition:all .3s ease-in;
+}
+
+@mixin smartphone {
+    @media screen and (max-width: 690px) {
+      @content;
+    }
+  }
+  @mixin tab {
+    @media   (min-width:691px) and (max-width: 1024px) {
+      @content;
+    }
+  }
+
+  

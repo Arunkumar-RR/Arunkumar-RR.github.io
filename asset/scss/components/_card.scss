@@ -1,0 +1,58 @@
+.project-card
+{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 300px;
+    height: 300px;
+    margin: 10px;
+    padding: 10px;
+    background-color: $fourth-color;
+    border: 2px solid $border-color-1;
+    box-shadow: map-get($map: $box-shadow, $key: light );
+    @include scale-transition;
+    &:hover
+    {
+        transform: scale(1.11);
+        border: 2px solid $third-color;
+    }
+    .project-title
+    {
+        font-size: map-get($map: $font-size, $key: small-3 );
+        font-weight: map-get($map: $font-weight, $key: bold);
+        text-align: center;
+        margin: 0;
+    }
+    .project-link-container
+    {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+        width: 100% ;
+    }
+    .project-description
+    {
+        font-size: map-get($map: $font-size, $key: small-1 );
+        font-weight: map-get($map: $font-weight, $key: regular);
+        text-align: center;
+        padding: 10px;
+    }
+}
+@include tab
+{
+    .project-card
+{
+ 
+    width: 400px;
+    height: 350px;
+
+
+    .project-title
+    {
+        font-size: map-get($map: $font-size, $key: medium-1 );
+   
+    }
+
+}
+}

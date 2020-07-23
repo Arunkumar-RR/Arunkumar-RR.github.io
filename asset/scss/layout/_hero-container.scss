@@ -1,0 +1,116 @@
+#hero-container
+{
+    height: 100vh;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    .hero-container-content
+    {
+        padding: 10px;
+        text-align: center;
+        & .name
+        {
+            font-size: map-get($map: $font-size , $key: big-3 );
+            font-family: map-get($map: $font-family, $key: montserrat );
+            font-weight: map-get($map: $font-weight, $key: bolder );
+            margin: 0;
+        }
+        & .my-passion
+        {
+            font-size: map-get($map: $font-size , $key: medium-3 );
+            font-weight: map-get($map: $font-weight, $key: bold );
+            margin: 0;
+        }
+    }
+    .quick-links-container
+    {
+        padding: 10px 0px ;
+        margin: 10px;
+        & .social-links
+        {
+            font-size: map-get($map: $font-size, $key: small-2 );
+            font-weight: map-get($map: $font-weight, $key: regular );
+            margin: 10px 0px;
+            &:hover
+            {
+                color: $primary-color;
+            }
+
+        }
+    }
+    .know-more-button
+    {
+        padding: 10px;
+        font-size: map-get($map: $font-size, $key: small-2 );
+        background-color: $primary-color;
+        border: none;
+        &:hover
+        {
+            background-color: $secondary-color;
+        }
+    }
+}
+
+@include smartphone
+{
+    #hero-container
+    {
+       
+        .hero-container-content
+        {
+           
+            & .name
+            {
+                font-size: map-get($map: $font-size , $key: big-1 );
+                padding: 0;
+            }
+            & .my-passion
+            {
+                font-size: map-get($map: $font-size , $key: medium-1 );
+            }
+        }
+        .quick-links-container
+        {
+            padding: 20px 0px ;
+            margin: 10px;
+            & .social-links
+            {
+                font-size: map-get($map: $font-size, $key: small-2);
+            }
+        }
+        .know-more-button
+        {
+            padding: 15px;
+            font-size: map-get($map: $font-size, $key: small-2 );
+        }
+    }
+}
+@include tab
+{
+    #hero-container
+    {
+       
+        .hero-container-content
+        {
+           
+            & .name
+            {
+                font-size: map-get($map: $font-size , $key: big-3 );
+            }
+        
+        }
+        .quick-links-container
+        {
+        
+            & .social-links
+            {
+                font-size: map-get($map: $font-size, $key: small-1);
+            }
+        }
+        .know-more-button
+        {
+            font-size: map-get($map: $font-size, $key: small-1 );
+        }
+    }
+}

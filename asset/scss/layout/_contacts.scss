@@ -1,0 +1,57 @@
+#contacts
+{
+    min-height: 85vh;
+    display: flex;
+    flex-flow: column wrap;
+
+    align-items: center;
+    background-color: $fifth-color;
+
+    .social-links
+    {
+        padding: 20px;
+        margin: 20px 0;
+        @include scale-transition;
+
+        font-size: map-get($map: $font-size, $key: medium-2 );
+        font-weight: map-get($map: $font-weight, $key: bold );
+        border-radius: map-get($map: $border-radius, $key: big );
+        &:hover
+        {
+            transform: scale(1.23);
+        }
+    }  
+}
+@include smartphone
+{
+    #contacts
+    {
+        text-align: center;
+    
+        .social-links
+        {
+            padding: 10px;
+            margin: 10px 0;
+    
+            font-size: map-get($map: $font-size, $key: small-3 );
+        }  
+    } 
+}
+@include tab
+{
+    #contacts
+    {
+        h4
+        {
+            font-size: map-get($map: $font-size, $key: medium-2 );
+
+        }
+        justify-content: space-evenly;
+        .social-links
+        {
+            padding: 20px;
+            margin: 20px 0;
+            font-size: map-get($map: $font-size, $key: medium-2 );
+        }  
+    } 
+}
