@@ -1,6 +1,5 @@
 #hero-container
 {
-    height: 100vh;
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
@@ -12,13 +11,15 @@
         & .name
         {
             font-size: map-get($map: $font-size , $key: big-3 );
-            font-weight: map-get($map: $font-weight, $key: bolder );
+            font-weight: map-get($map: $font-weight, $key: semi-bold );
             margin: 0;
+            color: $text-color-1;
         }
         & .my-passion
         {
             font-size: map-get($map: $font-size , $key: medium-3 );
-            font-weight: map-get($map: $font-weight, $key: bold );
+            font-weight: map-get($map: $font-weight, $key: medium );
+            color: $text-color-2;
             margin: 0;
         }
     }
@@ -38,17 +39,7 @@
 
         }
     }
-    .know-more-button
-    {
-        padding: 10px;
-        font-size: map-get($map: $font-size, $key: small-2 );
-        background-color: $primary-color;
-        border: none;
-        &:hover
-        {
-            background-color: $secondary-color;
-        }
-    }
+  
 }
 
 @include smartphone
@@ -78,11 +69,7 @@
                 font-size: map-get($map: $font-size, $key: small-2);
             }
         }
-        .know-more-button
-        {
-            padding: 15px;
-            font-size: map-get($map: $font-size, $key: small-2 );
-        }
+      
     }
 }
 @include tab
@@ -107,9 +94,6 @@
                 font-size: map-get($map: $font-size, $key: small-1);
             }
         }
-        .know-more-button
-        {
-            font-size: map-get($map: $font-size, $key: small-1 );
-        }
+       
     }
 }

@@ -1,7 +1,6 @@
 @import "utilities/variables" ; 
 @import "utilities/mixins" ; 
 
-@import "components/buttons";
 @import "components/card";
 @import "components/modal";
 
@@ -22,12 +21,16 @@ body
 {
     margin: 0;
     padding: 0;
+    background-color: $primary-color;
 }
 a
 {
     text-decoration: none;
     color: $text-color-1;
-    padding: 10px;
+    &:hover
+    {
+        color: $text-color-2;
+    }
 }
 img
 {
@@ -41,7 +44,6 @@ img
 .heading
 {
     font-size: map-get($font-size,medium-3);
-    font-weight: map-get($map: $font-weight, $key: bolder );
     text-align: center;
 }
 

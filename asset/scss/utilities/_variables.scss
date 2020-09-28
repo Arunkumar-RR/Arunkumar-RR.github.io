@@ -1,18 +1,15 @@
-$primary-color: #19c3e7; //#30c9e9
-$secondary-color: turquoise;
-$third-color:black;
-$fourth-color:white;
-$fifth-color:ghostwhite;
+$primary-color:  #f1f3f8; // #ffd57e
+$secondary-color: #d6e0f0;
 //fontfamily
 $font-family:'Poppins', sans-serif;
 
 //text
-$text-color-1:black;
-$text-color-2:white;
+$text-color-1:#1a1a2e;
+$text-color-2:#16213e;
 
 //font
 $font-weight : (
-    'black' : 900,
+    'dark' : 900,
     'extra-bold' : 800,
     'bold' : 700,
     'semi-bold' : 600,
