@@ -12,7 +12,6 @@
         & .name
         {
             font-size: map-get($map: $font-size , $key: big-3 );
-            font-family: map-get($map: $font-family, $key: montserrat );
             font-weight: map-get($map: $font-weight, $key: bolder );
             margin: 0;
         }

@@ -16,7 +16,7 @@
 html
 {
     scroll-behavior: smooth;
-    font-family:map-get($map: $font-family,$key: roboto );
+    font-family:$font-family;
 }
 body
 {
@@ -43,7 +43,6 @@ img
     font-size: map-get($font-size,medium-3);
     font-weight: map-get($map: $font-weight, $key: bolder );
     text-align: center;
-    font-family: map-get($map: $font-family, $key: montserrat );
 }
 
 //nav

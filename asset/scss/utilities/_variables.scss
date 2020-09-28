@@ -4,12 +4,7 @@ $third-color:black;
 $fourth-color:white;
 $fifth-color:ghostwhite;
 //fontfamily
-$font-family:(
-
-    'montserrat':('Montserrat', sans-serif),
-    'roboto':('Roboto', sans-serif)
-
-);
+$font-family:'Poppins', sans-serif;
 
 //text
 $text-color-1:black;
@@ -17,10 +12,12 @@ $text-color-2:white;
 
 //font
 $font-weight : (
-    'bolder' : 900,
+    'black' : 900,
+    'extra-bold' : 800,
     'bold' : 700,
-    'regular' : 400,
-    'light' : 300
+    'semi-bold' : 600,
+    'medium' : 500,
+    'regular' : 400
 );
 
 $font-size :(

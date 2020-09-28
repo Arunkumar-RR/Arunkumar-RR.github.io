@@ -287,8 +287,6 @@ nav .nav-item-link:hover {
 
 #hero-container .hero-container-content .name {
   font-size: 4em;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 900;
   margin: 0;
 }
 
@@ -589,7 +587,7 @@ footer .links > a {
 
 html {
   scroll-behavior: smooth;
-  font-family: "Roboto", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 body {
@@ -614,8 +612,6 @@ img {
 
 .heading {
   font-size: 1.8em;
-  font-weight: 900;
   text-align: center;
-  font-family: "Montserrat", sans-serif;
 }
 /*# sourceMappingURL=styles.css.map */
