@@ -43,7 +43,7 @@
                         color: $text-color-2;
                         font-size: $font-size-5;
                         display: flex;
-                        text-transform: lowercase;
+                        text-transform: capitalize;
                         font-weight: map-get($map: $font-weight, $key: regular );
                         border-radius: map-get($map: $border-radius , $key: small );
                         &::before

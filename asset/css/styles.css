@@ -337,7 +337,7 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  text-transform: lowercase;
+  text-transform: capitalize;
   font-weight: 400;
   border-radius: 10px;
 }
