@@ -298,6 +298,11 @@
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  margin: 0 0 30px 0;
+}
+
+#about-me .aboutme .heading {
+  margin: 0 0 10px 0;
 }
 
 #about-me .aboutme .content {
@@ -306,7 +311,7 @@
 }
 
 #about-me .skill-container .heading {
-  margin: 10px 0 0 0;
+  margin: 0 0 10px 0;
 }
 
 #about-me .skill-container .skill-item-container {
