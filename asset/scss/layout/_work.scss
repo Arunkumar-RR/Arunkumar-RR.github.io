@@ -1,16 +1,16 @@
 #work
 {
-   min-height:90vh;
-    padding: 10px;
-    margin: 0;
+    width: 100%;
+    max-width: 1324px;
+    padding: 50px 10px;
+    margin: 0 auto;
     .project-container
     {
         display: flex;
         flex-flow: row wrap;
         justify-content: space-evenly;
         align-items: center ;
-        margin: 80px 0 0 0;
-       
+        margin: 40px 0 0 0;
     }
 }
 

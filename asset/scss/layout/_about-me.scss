@@ -1,22 +1,39 @@
 #about-me
 {
-    padding: 10px;
+    padding: 50px  10px;
     background-color: $secondary-color;
-    text-align: center;
-
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    .aboutme
+    {
+        & .content
+        {
+            font-size: $font-size-5;
+            color: $text-color-2;
+        }
+    }
+    & .heading
+    {
+        text-align: start;
+        margin: 0 0 5px 0 ;
+        
+    }
             .skill-item-container
             {
                 display: flex;
-                flex-flow: row wrap;
+                flex-flow: column wrap;
+                justify-content: center;
+                align-items: flex-start;
                 .skill-items
                 {
-                    margin: 5px;
+                    margin: 0;
                     color: $text-color-2;
-                    padding: 20px;
+                    font-size: $font-size-5;
                     display: flex;
-                    justify-content: center;
                     text-transform: lowercase;
-                    font-weight: map-get($map: $font-weight, $key: semi-bold );
+                    font-weight: map-get($map: $font-weight, $key: regular );
                     border-radius: map-get($map: $border-radius , $key: small );
                     &::before
                     {
