@@ -1,5 +1,7 @@
 $primary-color:  #f1f3f8; // #ffd57e
 $secondary-color: #d6e0f0;
+$color-1: #1a1a2e;
+$color-2: #16213e;
 //fontfamily
 $font-family:'Poppins', sans-serif;
 
@@ -16,20 +18,13 @@ $font-weight : (
     'medium' : 500,
     'regular' : 400
 );
-
-$font-size :(
-    'big-1': 2em,
-    'big-2': 3em,
-    'big-3': 4em,
-
-    'medium-1':1.3em,
-    'medium-2':1.5em,
-    'medium-3':1.8em,
-
-    'small-1':1em,
-    'small-2':.8em,
-);
-
+$body-font:18px;
+$font-size-1:2rem;
+$font-size-2:1.8rem;
+$font-size-3:1.5rem;
+$font-size-4:1.3rem;
+$font-size-5:1rem;
+$font-size-6:.8rem;
 //border
 $border-color-1:#f0f0f0;
 $border-radius:(
