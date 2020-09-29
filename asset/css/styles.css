@@ -76,6 +76,12 @@
   }
 }
 
+@media screen and (max-width: 690px) {
+  .project-card {
+    margin: 20px 0;
+  }
+}
+
 .project-modal {
   display: none;
   position: fixed;
@@ -433,9 +439,15 @@
   #contacts {
     text-align: center;
   }
-  #contacts .social-links {
-    padding: 10px;
-    margin: 10px 0;
+  #contacts .contact-items {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column wrap;
+            flex-flow: column wrap;
+  }
+  #contacts .contact-items .social-links {
+    padding: 20px;
+    margin: 0;
   }
 }
 

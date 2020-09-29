@@ -36,13 +36,18 @@
     #contacts
     {
         text-align: center;
-    
-        .social-links
+        .contact-items
         {
-            padding: 10px;
-            margin: 10px 0;
-    
-        }  
+          
+            flex-flow: column wrap;
+            .social-links
+            {
+                padding: 20px;
+                margin:  0;
+               
+            }  
+        }
+       
     } 
 }
 @include tab
