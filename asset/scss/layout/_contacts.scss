@@ -2,22 +2,34 @@
 {
     display: flex;
     flex-flow: column wrap;
-
     align-items: center;
-
-    .social-links
+    justify-content: center;
+    .heading
     {
-        padding: 20px;
-        margin: 20px 0;
-        @include scale-transition;
-
-        font-weight: map-get($map: $font-weight, $key: bold );
-        border-radius: map-get($map: $border-radius, $key: big );
-        &:hover
+        margin: 0;
+    }
+    .contact-items
+    {
+        display: flex;
+        width: 100%;
+        padding: 10px 0;
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+        .social-links
         {
-            transform: scale(1.23);
-        }
-    }  
+            padding: 20px;
+            margin: 10px 0;
+            @include scale-transition;
+            color: $text-color-2;
+            font-weight: map-get($map: $font-weight, $key: bold );
+            border-radius: map-get($map: $border-radius, $key: big );
+            &:hover
+            {
+                transform:translateY(-5px);
+            }
+        }  
+    }
+    
 }
 @include smartphone
 {

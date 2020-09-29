@@ -1,16 +1,24 @@
 footer
 {
     margin: 0;
-    padding: 0;
-    background-color: $primary-color;
+    padding: 20px;
+    background-color: $secondary-color;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
+    font-size: $font-size-5;
+    font-weight: map-get($map: $font-weight, $key: semi-bold );
     small
     {
+        color: $text-color-1;
         a
         {
             text-decoration: underline;
+            color: $text-color-2;
+            &:hover
+            {
+                text-decoration: none;
+            }
         }
     }
     

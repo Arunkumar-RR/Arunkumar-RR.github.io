@@ -11,6 +11,7 @@
     background-color: $color-1;
     color: $primary-color;
     box-shadow: map-get($map: $box-shadow, $key: light );
+    border-radius: map-get($map: $border-radius, $key: extra-small);
     @include scale-transition;
     &:hover
     {
