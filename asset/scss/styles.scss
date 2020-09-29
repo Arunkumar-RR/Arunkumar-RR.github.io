@@ -48,13 +48,9 @@ img
 }
 .btn
 {
-    font-size: $font-size-6;
+    font-size: $font-size-7;
     padding: 10px;
-    background-color: lighten($color: $secondary-color, $amount: 50);
-    &:hover
-    {
-        background-color: lighten($color: $secondary-color, $amount: 10);
-    }
+
 }
 
 //nav
