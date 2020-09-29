@@ -295,9 +295,9 @@
   -webkit-box-direction: normal;
       -ms-flex-flow: column wrap;
           flex-flow: column wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
@@ -344,11 +344,9 @@
   max-width: 1324px;
   padding: 50px 10px;
   margin: 0 auto;
-  outline: solid;
 }
 
 #work .project-container {
-  outline: solid;
   overflow: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
