@@ -340,13 +340,16 @@
 }
 
 #work {
-  width: 100%;
+  width: 93%;
   max-width: 1324px;
   padding: 50px 10px;
   margin: 0 auto;
+  outline: solid;
 }
 
 #work .project-container {
+  outline: solid;
+  overflow: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

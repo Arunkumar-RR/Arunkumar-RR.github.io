@@ -1,11 +1,15 @@
 #work
 {
-    width: 100%;
+    width: 93%;
     max-width: 1324px;
     padding: 50px 10px;
     margin: 0 auto;
+    outline: solid;
+
     .project-container
     {
+        outline: solid;
+        overflow: hidden;
         display: flex;
         flex-flow: row wrap;
         justify-content: space-evenly;
