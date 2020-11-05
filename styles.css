@@ -1,11 +1,9 @@
-h1
-{
-    font-size: clamp(1.3rem, 2.5vw, 2rem)
+h1 {
+  font-size: clamp(1.3rem, 2.5vw, 2rem);
 }
-main
-{
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+main {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
