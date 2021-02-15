@@ -60,6 +60,7 @@ h4 {
   font-family: var(--ff-heading);
   color: var(--heading-color);
 }
+
 p {
   color: var(--text-color);
   font-size: var(--f-size-4);
@@ -102,10 +103,11 @@ li {
 }
 .primary-btn:hover {
   opacity: .9;
+  transform: translateY(-3px);
 }
 .secondary-btn
 {
-  border: 2px solid var(--background-color);
+  border: 2px solid #bab9b8;
 }
 .secondary-btn:hover 
 {
@@ -206,8 +208,8 @@ nav{
   flex-flow: column wrap;
 }
 .project-content h3 {
-  font-size: var(--f-size-2);
-  margin: 0 0 10px 0;
+  font-size: var(--f-size-3);
+  margin: 0 0 15px 0;
 }
 .project-content small {
   font-size: var(--f-size-7);
@@ -215,23 +217,17 @@ nav{
   opacity: 0.5;
 }
 .project-content p {
-  margin: 30px 0 0 0;
+  margin: 30px 0 10px 0;
+  font-size: var(--f-size-5);
 }
-.project-content h4 {
-  display: flex;
-  font-size: var(--f-size-4);
-  margin: 45px 0 0;
-}
-.project-content h4 img {
-  margin: 0 10px 0 0;
-}
+
 
 .techstack {
   padding: 5px 15px;
   font-size: var(--f-size-5);
   color: var(--heading-color);
   font-weight: 600;
-  margin: 30px 30px 0  0;
+  margin: 15px 10px 0  0;
   border-radius: 5px;
   background-color:#f7deb3;
 }
