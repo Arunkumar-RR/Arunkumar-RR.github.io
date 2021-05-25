@@ -13,7 +13,7 @@
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  /* outline: white solid; */
+  /* outline: black solid; */
 }
 
 html {
@@ -46,7 +46,6 @@ h1{
   font-size: 1.563rem;
   margin: 50px 0 0 ;
   font-weight: bold;
-
 }
 
 .introduction
@@ -54,7 +53,7 @@ h1{
   background-color: var(--background-color);
   margin: 10px;
   max-width: 99%;
-  height: 98vh;
+  min-height: 98vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -72,7 +71,6 @@ h1{
   max-width: 1180px;
   margin: 0 auto;
   width: 100%;
-
 }
 .social-links-container
 {
@@ -81,7 +79,49 @@ h1{
   width: -moz-fit-content;
   width: fit-content;
 }
-li:not(:first-child)
+.social-links-container li:not(:first-child)
 {
   margin:0 0 0 40px ;
+}
+
+@media screen and (max-width:768px) {
+  .container
+  {
+    margin:0 0 0 34px ;
+    width: 100%;
+  }
+  .introduction{
+    margin: 0;
+    width: 100%;
+  }
+  h1{
+    font-size: 2.563rem;
+  }
+}
+
+@media screen and (max-width:768px) {
+  .introduction
+  {
+    min-height: 100vh;
+  }
+  .container
+  {
+    margin:0 0 0 15px ;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  .logo{
+    font-size: 1rem;
+  }
+  h1{
+    font-size: 1.563rem;
+  }
+
+  .social-links-container li:not(:first-child)
+  {
+    font-size: 0.875rem;
+    margin:0 0 0 15px ;
+  }
+  
 }
