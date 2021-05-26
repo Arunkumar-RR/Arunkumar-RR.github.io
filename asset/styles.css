@@ -95,25 +95,11 @@ h1{
 }
 
 @media screen and (max-width:768px) {
-  .container
-  {
-    margin:0 0 0 34px ;
-    width: 100%;
-  }
-  .introduction{
-    margin: 0;
-    width: 100%;
-  }
-  h1{
-    font-size: 2.563rem;
-  }
-}
-
-@media screen and (max-width:425px) {
   .introduction
   {
     min-height: 100vh;
     max-width: 100%;
+    margin: 5px;
   }
   .container
   {
