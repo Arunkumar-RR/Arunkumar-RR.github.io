@@ -112,7 +112,7 @@ h1{
 @media screen and (max-width:425px) {
   .introduction
   {
-    min-height: 100vh;
+    min-height: 98vh;
     max-width: 100%;
   }
   .container
