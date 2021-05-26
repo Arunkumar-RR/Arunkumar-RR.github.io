@@ -112,7 +112,7 @@ h1{
 @media screen and (max-width:425px) {
   .introduction
   {
-    min-height: 98vh;
+    min-height: 100vh;
     max-width: 100%;
   }
   .container
@@ -138,5 +138,6 @@ h1{
   .social-links-container li
   {
     padding: 10px;
+    font-size: 0.875rem;
   }
 }
