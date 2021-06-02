@@ -53,7 +53,7 @@ h1{
   background-color: var(--background-color);
   margin: 10px;
   max-width: 99%;
-  min-height: 98vh;
+  height: calc(100vh - 10px);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -115,7 +115,6 @@ h1{
 @media screen and (max-width:1228px) {
   .introduction
   {
-    min-height: 100vh;
     max-width: 100%;
     margin: 5px;
   }
