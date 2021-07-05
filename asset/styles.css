@@ -99,11 +99,7 @@ h1{
   h1{
     font-size: 1.563rem;
   }
-  
-  .social-links-container li:not(:first-child)
-  {
-    font-size: 0.875rem;
-  }
+
   .social-links-container a
   {
     font-size: 0.875rem;
@@ -120,13 +116,5 @@ h1{
     width: -webkit-fit-content;
     width: -moz-fit-content;
     max-width: 100%;
-  }
-  .social-links-container li:not(:first-child)
-  {
-    margin:0;
-  }
-  .social-links-container li
-  {
-    padding: 10px;
   }
 }
