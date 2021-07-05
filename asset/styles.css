@@ -4,8 +4,7 @@
   --f-large: 4.188rem;
   --f-size-1: 3.125rem;
   --f-size-2: 2.313rem;
-  --background-color:#1539CF;
-  --text-color: #F1D3D3;
+  --text-color: rgb(0, 0, 0);
 }
 
 *{
@@ -16,16 +15,13 @@
   /* outline: black solid; */
 }
 
-html {
-  scroll-behavior: smooth;
-}
 body{
   font-family: var(--ff);
   font-size: var(--base-font);
 }
 a{
   text-decoration: none;
-  color: var(--text-color);
+  color:var(--text-color) ;
   font-weight: bold;
 }
 a:hover
@@ -50,10 +46,6 @@ h1{
 
 .introduction
 {
-  background-color: var(--background-color);
-  margin: 10px;
-  max-width: 99%;
-  height: calc(100vh - 10px);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -63,8 +55,6 @@ h1{
           flex-flow: column wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
-          justify-content: space-between;
-  color: var(--text-color);
 }
 .container
 {
@@ -74,7 +64,7 @@ h1{
 }
 .social-links-container
 {
-  padding: 0 0 45px 0;
+  /* padding: 50px 0; */
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
@@ -89,11 +79,18 @@ h1{
       -ms-flex-pack: start;
           justify-content: flex-start;
 }
-.social-links-container li:not(:first-child)
+.social-links-container a:not(:first-child)
 {
   margin:0 0 0 40px ;
 }
-
+.information-container{
+  padding: 150px 0 30px 0;
+}
+.info
+{
+  margin: 10px 0;
+  color: rgb(0, 0, 0,.84);
+}
 @media screen and (max-width:768px) {
   .logo{
     font-size: 1rem;
@@ -107,20 +104,19 @@ h1{
   {
     font-size: 0.875rem;
   }
-  .social-links-container li
+  .social-links-container a
   {
     font-size: 0.875rem;
   }
+  .social-links-container a:not(:first-child)
+{
+  margin:0 0 0 23px ;
+}
 }
 @media screen and (max-width:1228px) {
-  .introduction
-  {
-    max-width: 100%;
-    margin: 5px;
-  }
   .container
   {
-    margin:0 0 0 15px ;
+    margin:0 10px 0 10px ;
     width: -webkit-fit-content;
     width: -moz-fit-content;
     max-width: 100%;
